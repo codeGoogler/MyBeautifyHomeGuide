@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/resguide.yyh.com.mybeautifyhomeguide"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <guide.yyh.com.mybeautifyhomeguide.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:padding="20dip"
+        app:centered="true"
+        app:currentBg="@mipmap/wifi_on"
+        app:defaultBg="@mipmap/wifi_off"
+        app:fillColor="#FF888888"
+        app:pageColor="#EEEEEE"
+        app:radius="10dp" />
+
+</RelativeLayout>
